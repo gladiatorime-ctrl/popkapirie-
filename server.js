@@ -12,8 +12,8 @@ const upload = multer({
 });
 
 // --- ВАШИ ДАННЫЕ ВПИСАНЫ СЮДА ---
-const MEGA_EMAIL = "novyjpad"; // Ваш email
-const MEGA_PASSWORD = "Iop0iop0"; // Ваш пароль
+const MEGA_EMAIL = process.env.MEGA_EMAIL;
+const MEGA_PASSWORD = process.env.MEGA_PASSWORD;// Ваш пароль
 // --------------------------------
 
 // Проверка (теперь она не сработает, так как данные есть)
